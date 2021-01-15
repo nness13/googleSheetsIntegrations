@@ -3,6 +3,7 @@ import cors from 'cors';
 import bodyParser from 'body-parser';
 
 import { serverPort } from './etc/config.json';
+import {router as accountRoutes} from './routes/AccountApi';
 
 import * as db from './utils/DataBaseUtils';
 
@@ -18,18 +19,9 @@ app.use( bodyParser.json() );
 // Allow requests from any origin
 app.use(cors({ origin: '*' }));
 
-// RESTful api handlers
-app.get('/account', (req, res) => {
-    db.listAccounts().then(data => res.send(data));
-});
+// Allow routes
+app.use(accountRoutes)
 
-app.post('/account', (req, res) => {
-    db.createAccount(req.body).then(data => res.send(data));
-});
-
-app.delete('/account/:id', (req, res) => {
-    db.deleteAccount(req.params.id).then(data => res.send(data));
-});
 
 const server = app.listen(serverPort, function() {
     console.log(`Server is up and running on port ${serverPort}`);
