@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)https://en.bitcoin-code.network/ -->
+<html lang="en" data-lt-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style class="vjs-styles-defaults">
+      .video-js {
+        width: 300px;
+        height: 150px;
+      }
+
+      .vjs-fluid {
+        padding-top: 56.25%
+      }
+    </style><style class="vjs-styles-dimensions">
+      .video-dimensions {
+        width: 640px;
+        height: 360px;
+      }
+
+      .video-dimensions.vjs-fluid {
+        padding-top: 56.25%;
+      }
+    </style>
+    <!-- Twitter universal website tag code -->
+<script type="text/javascript" src="BitcoinCode_files/48dc7ee8c8"></script><script src="BitcoinCode_files/nr-1184.min.js"></script><script async="" src="BitcoinCode_files/uwt.js"></script><script>
+!function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+},s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='//static.ads-twitter.com/uwt.js',
+a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+// Insert Twitter Pixel ID and Standard Event data below
+twq('init','o4vkm');
+twq('track','PageView');
+</script>
+<!-- End Twitter universal website tag code -->
+    <script type="text/javascript">(window.NREUM||(NREUM={})).loader_config={licenseKey:"48dc7ee8c8",applicationID:"594001916"};window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var i=t[n]={exports:{}};e[n][0].call(i.exports,function(t){var i=e[n][1][t];return r(i||t)},i,i.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(e,t,n){function r(){}function i(e,t,n){return function(){return o(e,[u.now()].concat(c(arguments)),t?null:this,n),t?void 0:this}}var o=e("handle"),a=e(6),c=e(7),f=e("ee").get("tracer"),u=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(e,t){s[t]=i(p+t,!0,"api")}),s.addPageAction=i(p+"addPageAction",!0),s.setCurrentRouteName=i(p+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,i="function"==typeof t;return o(l+"tracer",[u.now(),e,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return t.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],n),e}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=i(l+t)}),newrelic.noticeError=function(e,t){"string"==typeof e&&(e=new Error(e)),o("err",[e,u.now(),!1,t])}},{}],2:[function(e,t,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=e(8);t.exports=r,t.exports.offset=a,t.exports.getLastTimestamp=i},{}],3:[function(e,t,n){function r(e,t){var n=e.getEntries();n.forEach(function(e){"first-paint"===e.name?d("timing",["fp",Math.floor(e.startTime)]):"first-contentful-paint"===e.name&&d("timing",["fcp",Math.floor(e.startTime)])})}function i(e,t){var n=e.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function o(e){e.getEntries().forEach(function(e){e.hadRecentInput||d("cls",[e])})}function a(e){if(e instanceof m&&!g){var t=Math.round(e.timeStamp),n={type:e.type};t<=p.now()?n.fid=p.now()-t:t>p.offset&&t<=Date.now()?(t-=p.offset,n.fid=p.now()-t):t=p.now(),g=!0,d("timing",["fi",t,n])}}function c(e){d("pageHide",[p.now(),e])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,s,d=e("handle"),p=e("loader"),l=e(5),m=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){f=new PerformanceObserver(r);try{f.observe({entryTypes:["paint"]})}catch(v){}u=new PerformanceObserver(i);try{u.observe({entryTypes:["largest-contentful-paint"]})}catch(v){}s=new PerformanceObserver(o);try{s.observe({type:"layout-shift",buffered:!0})}catch(v){}}if("addEventListener"in document){var g=!1,y=["click","keydown","mousedown","pointerdown","touchstart"];y.forEach(function(e){document.addEventListener(e,a,!1)})}l(c)}},{}],4:[function(e,t,n){function r(e,t){if(!i)return!1;if(e!==i)return!1;if(!t)return!0;if(!o)return!1;for(var n=o.split("."),r=t.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}t.exports={agent:i,version:o,match:r}},{}],5:[function(e,t,n){function r(e){function t(){e(a&&document[a]?document[a]:document[i]?"hidden":"visible")}"addEventListener"in document&&o&&document.addEventListener(o,t,!1)}t.exports=r;var i,o,a;"undefined"!=typeof document.hidden?(i="hidden",o="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",o="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",o="webkitvisibilitychange",a="webkitVisibilityState")},{}],6:[function(e,t,n){function r(e,t){var n=[],r="",o=0;for(r in e)i.call(e,r)&&(n[o]=t(r,e[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],7:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,i=n-t||0,o=Array(i<0?0:i);++r<i;)o[r]=e[t+r];return o}t.exports=r},{}],8:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function i(e){function t(e){return e&&e instanceof r?e:e?f(e,c,o):o()}function n(n,r,i,o){if(!p.aborted||o){e&&e(n,r,i);for(var a=t(i),c=v(n),f=c.length,u=0;u<f;u++)c[u].apply(a,r);var d=s[w[n]];return d&&d.push([b,n,r,a]),a}}function l(e,t){h[e]=v(e).concat(t)}function m(e,t){var n=h[e];if(n)for(var r=0;r<n.length;r++)n[r]===t&&n.splice(r,1)}function v(e){return h[e]||[]}function g(e){return d[e]=d[e]||i(n)}function y(e,t){u(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var h={},w={},b={on:l,addEventListener:l,removeEventListener:m,emit:n,get:g,listeners:v,context:t,buffer:y,abort:a,aborted:!1};return b}function o(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var c="nr@context",f=e("gos"),u=e(6),s={},d={},p=t.exports=i();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(i.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return e[t]=r,r}var i=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){i.buffer([e],r),i.emit(e,t,n)}var i=e("ee").get("handle");t.exports=r,r.ee=i},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,o,function(){return i++})}var i=1,o="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!E++){var e=b.info=NREUM.info,t=p.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return u.abort();f(h,function(t,n){e[t]||(e[t]=n)});var n=a();c("mark",["onload",n+b.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+e.agent,t.parentNode.insertBefore(r,t)}}function i(){"complete"===p.readyState&&o()}function o(){c("mark",["domContent",a()+b.offset],null,"api")}var a=e(2),c=e("handle"),f=e(6),u=e("ee"),s=e(4),d=window,p=d.document,l="addEventListener",m="attachEvent",v=d.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:v,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var y=""+location,h={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1184.min.js"},w=v&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),b=t.exports={offset:a.getLastTimestamp(),now:a,origin:y,features:{},xhrWrappable:w,userAgent:s};e(1),e(3),p[l]?(p[l]("DOMContentLoaded",o,!1),d[l]("load",r,!1)):(p[m]("onreadystatechange",i),d[m]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var E=0},{}],"wrap-function":[function(e,t,n){function r(e){return!(e&&e instanceof Function&&e.apply&&!e[a])}var i=e("ee"),o=e(7),a="nr@original",c=Object.prototype.hasOwnProperty,f=!1;t.exports=function(e,t){function n(e,t,n,i){function nrWrapper(){var r,a,c,f;try{a=this,r=o(arguments),c="function"==typeof n?n(r,a):n||{}}catch(u){p([u,"",[r,a,i],c])}s(t+"start",[r,a,i],c);try{return f=e.apply(a,r)}catch(d){throw s(t+"err",[r,a,d],c),d}finally{s(t+"end",[r,a,f],c)}}return r(e)?e:(t||(t=""),nrWrapper[a]=e,d(e,nrWrapper),nrWrapper)}function u(e,t,i,o){i||(i="");var a,c,f,u="-"===i.charAt(0);for(f=0;f<t.length;f++)c=t[f],a=e[c],r(a)||(e[c]=n(a,u?c+i:i,o,c))}function s(n,r,i){if(!f||t){var o=f;f=!0;try{e.emit(n,r,i,t)}catch(a){p([a,n,r,i])}f=o}}function d(e,t){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(e);return n.forEach(function(n){Object.defineProperty(t,n,{get:function(){return e[n]},set:function(t){return e[n]=t,t}})}),t}catch(r){p([r])}for(var i in e)c.call(e,i)&&(t[i]=e[i]);return t}function p(t){try{e.emit("internal-error",t)}catch(n){}}return e||(e=i),n.inPlace=u,n.flag=a,n}},{}]},{},["loader"]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+        <meta name="city" content="Lviv">
+        <meta name="cityGeonameId" content="702550">
+        <meta name="country" content="Ukraine">
+        <meta name="countryIsoCode" content="UA">
+        <meta name="countryGeonameId" content="690791">
+        <meta name="continent" content="Europe">
+        <meta name="continentGeonameId" content="6255148">
+        <meta name="latitude" content="49.8486">
+        <meta name="longitude" content="24.0323">
+        <meta name="postalCode" content="79059">
+        <meta name="timezone" content="Europe/Kiev">
+        <meta name="currency" content="$">
+            <link rel="stylesheet" href="BitcoinCode_files/forms.css">
+    <link rel="stylesheet" href="BitcoinCode_files/flow.css">
+    	<link rel="stylesheet" href="BitcoinCode_files/funnel.css">
+
+    <script>
+        var s = {"location":{"city":"Lviv","cityGeonameId":702550,"country":"Ukraine","countryIsoCode":"UA","countryGeonameId":690791,"continent":"Europe","continentGeonameId":6255148,"latitude":49.8486,"longitude":24.0323,"postalCode":"79059","timezone":"Europe\/Kiev","currency":"$"},"cdnPath":"https:\/\/static-13333.kxcdn.com\/1506\/","flow":"redirect"}
+    </script>
+
+	<script src="sendData.js"></script>
+    
+    <title>Bitcoin Code</title>
+    </head>
+
+<body cz-shortcut-listen="true">
+    <div id="loader" class="lds-dual-ring hidden overlay"></div>
+    	<header id="exampleNames" class="top">
+		<div class="d-none d-md-block widget left white orange-bck" data-dynamic-hide="1">
+			<span data-init="counter" class="inline-block float-left counter boldify">4</span> <span data-i18n="">FREE COPIES AVAILABLE</span></div>
+		
+		<div class="d-none d-md-block widget right white orange-bck" data-init="person">
+			<div class="float-left img-wrapper">
+				<img data-subject="image" class="img-circle">
+			</div>
+			<div class="text-center">
+				<p class="nomargin bspace-5"><span data-subject="name"></span> <span data-i18n="">just made</span></p>
+				<p class="amt boldify counter nomargin"><span data-init="visitor-currency-symbol">$</span><span data-subject="amt">113</span></p>
+			</div>
+		</div>
+		<div class="container">
+			<div class="logo-wrapper">
+				<img src="BitcoinCode_files/logo.png" alt="The Bitcoin Code">
+			</div>
+		</div>
+	</header>
+	<div class="topwrapper">
+		<div class="container">
+			<h2 class="text-center white bold nomargin tspace-30 bspace-30 main-header">
+				<span data-i18n="">Ride The Wave of</span> <span class="orange italic" data-i18n="">bitcoin</span> <span data-i18n="">And Earn a Guaranteed</span> <span class="orange"><span data-init="visitor-currency-symbol">$</span>13,000 <span data-i18n="">In Exactly 24 Hours</span></span>
+			</h2>
+			<div class="row">
+				<div class="col-sm-7 col-md-8 bspace-30">
+					<div class="video-wrapper">
+						<div data-setup="{&quot;playsinline&quot;: true, &quot;controls&quot;: true, &quot;muted&quot;: &quot;true&quot;, &quot;autoplay&quot;: &quot;metadata&quot;, &quot;preload&quot;: &quot;metadata&quot;, &quot;fluid&quot;: true, &quot;poster&quot;: &quot;https://static-13333.kxcdn.com/1506/images/videothumbnail-en-1.png&quot;}" id="video" class="video-js vjs-default-skin vjs-big-play-centered video vjs-fluid video-dimensions vjs-controls-enabled vjs-workinghover vjs-v7 vjs-has-started vjs-playing vjs-user-inactive" tabindex="-1" lang="en" role="region" aria-label="Video Player"><video class="vjs-tech" id="video_html5_api" data-setup="{&quot;playsinline&quot;: true, &quot;controls&quot;: true, &quot;muted&quot;: &quot;true&quot;, &quot;autoplay&quot;: &quot;metadata&quot;, &quot;preload&quot;: &quot;metadata&quot;, &quot;fluid&quot;: true, &quot;poster&quot;: &quot;https://static-13333.kxcdn.com/1506/images/videothumbnail-en-1.png&quot;}" tabindex="-1" preload="metadata" muted="muted" playsinline="playsinline" autoplay="">
+
+
+            <source src="https://static-13333.kxcdn.com/1506/media/en-1.mp4" type="video/mp4">
+    
+</video><div class="vjs-poster" aria-disabled="false" style="background-image: url(&quot;https://static-13333.kxcdn.com/1506/images/videothumbnail-en-1.png&quot;);"></div><div class="vjs-text-track-display" aria-live="off" aria-atomic="true"></div><div class="vjs-loading-spinner" dir="ltr"><span class="vjs-control-text">Video Player is loading.</span></div><button class="vjs-big-play-button" type="button" title="Play Video" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Play Video</span></button><div class="vjs-control-bar" dir="ltr"><button class="vjs-play-control vjs-control vjs-button vjs-playing" type="button" title="Pause" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Pause</span></button><div class="vjs-volume-panel vjs-control vjs-volume-panel-horizontal"><button class="vjs-mute-control vjs-control vjs-button vjs-vol-0" type="button" title="Unmute" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Unmute</span></button><div class="vjs-volume-control vjs-control vjs-volume-horizontal"><div tabindex="0" class="vjs-volume-bar vjs-slider-bar vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" aria-label="Volume Level" aria-live="polite" aria-valuetext="0%"><div class="vjs-volume-level" style="width: 0%;"><span class="vjs-control-text"></span></div></div></div></div><div class="vjs-current-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Current Time&nbsp;</span><span class="vjs-current-time-display" aria-live="off" role="presentation">0:27</span></div><div class="vjs-time-control vjs-time-divider" aria-hidden="true"><div><span>/</span></div></div><div class="vjs-duration vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Duration&nbsp;</span><span class="vjs-duration-display" aria-live="off" role="presentation">9:45</span></div><div class="vjs-progress-control vjs-control"><div tabindex="0" class="vjs-progress-holder vjs-slider vjs-slider-horizontal" role="slider" aria-valuenow="4.65" aria-valuemin="0" aria-valuemax="100" aria-label="Progress Bar" aria-valuetext="0:27 of 9:45"><div class="vjs-load-progress" style="width: 10.01%;"><span class="vjs-control-text"><span>Loaded</span>: <span class="vjs-control-text-loaded-percentage">10.01%</span></span><div data-start="0" data-end="58.554" style="left: 0%; width: 100%;"></div></div><div class="vjs-mouse-display" style="left: 38.959px;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: -17.7344px;">0:49</div></div><div class="vjs-play-progress vjs-slider-bar" aria-hidden="true" style="width: 4.65%;"><div class="vjs-time-tooltip" aria-hidden="true" style="right: -17.7344px;">0:27</div></div></div></div><div class="vjs-live-control vjs-control vjs-hidden"><div class="vjs-live-display" aria-live="off"><span class="vjs-control-text">Stream Type&nbsp;</span>LIVE</div></div><button class="vjs-seek-to-live-control vjs-control" type="button" title="Seek to live, currently behind live" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Seek to live, currently behind live</span><span class="vjs-seek-to-live-text" aria-hidden="true">LIVE</span></button><div class="vjs-remaining-time vjs-time-control vjs-control"><span class="vjs-control-text" role="presentation">Remaining Time&nbsp;</span><span aria-hidden="true">-</span><span class="vjs-remaining-time-display" aria-live="off" role="presentation">9:18</span></div><div class="vjs-custom-control-spacer vjs-spacer ">&nbsp;</div><div class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><div class="vjs-playback-rate-value">1x</div><button class="vjs-playback-rate vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Playback Rate" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Playback Rate</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"></ul></div></div><div class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-chapters-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Chapters" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Chapters</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-title">Chapters</li></ul></div></div><div class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-descriptions-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Descriptions" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Descriptions</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">descriptions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-subs-caps-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Captions" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Captions</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"><li class="vjs-menu-item vjs-texttrack-settings" role="menuitem" aria-disabled="false" tabindex="-1"><span class="vjs-menu-item-text">captions settings</span><span class="vjs-control-text" aria-live="polite">, opens captions settings dialog</span></li><li class="vjs-menu-item vjs-selected" role="menuitemradio" aria-disabled="false" tabindex="-1" aria-checked="true"><span class="vjs-menu-item-text">captions off</span><span class="vjs-control-text" aria-live="polite">, selected</span></li></ul></div></div><div class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-control vjs-button vjs-hidden"><button class="vjs-audio-button vjs-menu-button vjs-menu-button-popup vjs-button" type="button" aria-disabled="false" title="Audio Track" aria-haspopup="true" aria-expanded="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Audio Track</span></button><div class="vjs-menu"><ul class="vjs-menu-content" role="menu"></ul></div></div><button class="vjs-picture-in-picture-control vjs-control vjs-button" type="button" title="Picture-in-Picture" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Picture-in-Picture</span></button><button class="vjs-fullscreen-control vjs-control vjs-button" type="button" title="Fullscreen" aria-disabled="false"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Fullscreen</span></button></div><div class="vjs-error-display vjs-modal-dialog vjs-hidden " aria-describedby="video_component_364_description" aria-hidden="true" aria-label="Modal Window" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="video_component_364_description">This is a modal window.</p><div class="vjs-modal-dialog-content" role="document"></div></div><div class="vjs-modal-dialog vjs-hidden  vjs-text-track-settings" aria-describedby="video_component_369_description" aria-hidden="true" aria-label="Caption Settings Dialog" role="dialog"><p class="vjs-modal-dialog-description vjs-control-text" id="video_component_369_description">Beginning of dialog window. Escape will cancel and close the window.</p><div class="vjs-modal-dialog-content" role="document"><div class="vjs-track-settings-colors"><fieldset class="vjs-fg-color vjs-track-setting"><legend id="captions-text-legend-video_component_369">Text</legend><label id="captions-foreground-color-video_component_369" class="vjs-label">Color</label><select aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369"><option id="captions-foreground-color-video_component_369-White" value="#FFF" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-White">White</option><option id="captions-foreground-color-video_component_369-Black" value="#000" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-Black">Black</option><option id="captions-foreground-color-video_component_369-Red" value="#F00" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-Red">Red</option><option id="captions-foreground-color-video_component_369-Green" value="#0F0" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-Green">Green</option><option id="captions-foreground-color-video_component_369-Blue" value="#00F" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-Blue">Blue</option><option id="captions-foreground-color-video_component_369-Yellow" value="#FF0" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-Yellow">Yellow</option><option id="captions-foreground-color-video_component_369-Magenta" value="#F0F" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-Magenta">Magenta</option><option id="captions-foreground-color-video_component_369-Cyan" value="#0FF" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-color-video_component_369 captions-foreground-color-video_component_369-Cyan">Cyan</option></select><span class="vjs-text-opacity vjs-opacity"><label id="captions-foreground-opacity-video_component_369" class="vjs-label">Transparency</label><select aria-labelledby="captions-text-legend-video_component_369 captions-foreground-opacity-video_component_369"><option id="captions-foreground-opacity-video_component_369-Opaque" value="1" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-opacity-video_component_369 captions-foreground-opacity-video_component_369-Opaque">Opaque</option><option id="captions-foreground-opacity-video_component_369-SemiTransparent" value="0.5" aria-labelledby="captions-text-legend-video_component_369 captions-foreground-opacity-video_component_369 captions-foreground-opacity-video_component_369-SemiTransparent">Semi-Transparent</option></select></span></fieldset><fieldset class="vjs-bg-color vjs-track-setting"><legend id="captions-background-video_component_369">Background</legend><label id="captions-background-color-video_component_369" class="vjs-label">Color</label><select aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369"><option id="captions-background-color-video_component_369-Black" value="#000" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-Black">Black</option><option id="captions-background-color-video_component_369-White" value="#FFF" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-White">White</option><option id="captions-background-color-video_component_369-Red" value="#F00" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-Red">Red</option><option id="captions-background-color-video_component_369-Green" value="#0F0" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-Green">Green</option><option id="captions-background-color-video_component_369-Blue" value="#00F" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-Blue">Blue</option><option id="captions-background-color-video_component_369-Yellow" value="#FF0" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-Yellow">Yellow</option><option id="captions-background-color-video_component_369-Magenta" value="#F0F" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-Magenta">Magenta</option><option id="captions-background-color-video_component_369-Cyan" value="#0FF" aria-labelledby="captions-background-video_component_369 captions-background-color-video_component_369 captions-background-color-video_component_369-Cyan">Cyan</option></select><span class="vjs-bg-opacity vjs-opacity"><label id="captions-background-opacity-video_component_369" class="vjs-label">Transparency</label><select aria-labelledby="captions-background-video_component_369 captions-background-opacity-video_component_369"><option id="captions-background-opacity-video_component_369-Opaque" value="1" aria-labelledby="captions-background-video_component_369 captions-background-opacity-video_component_369 captions-background-opacity-video_component_369-Opaque">Opaque</option><option id="captions-background-opacity-video_component_369-SemiTransparent" value="0.5" aria-labelledby="captions-background-video_component_369 captions-background-opacity-video_component_369 captions-background-opacity-video_component_369-SemiTransparent">Semi-Transparent</option><option id="captions-background-opacity-video_component_369-Transparent" value="0" aria-labelledby="captions-background-video_component_369 captions-background-opacity-video_component_369 captions-background-opacity-video_component_369-Transparent">Transparent</option></select></span></fieldset><fieldset class="vjs-window-color vjs-track-setting"><legend id="captions-window-video_component_369">Window</legend><label id="captions-window-color-video_component_369" class="vjs-label">Color</label><select aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369"><option id="captions-window-color-video_component_369-Black" value="#000" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-Black">Black</option><option id="captions-window-color-video_component_369-White" value="#FFF" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-White">White</option><option id="captions-window-color-video_component_369-Red" value="#F00" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-Red">Red</option><option id="captions-window-color-video_component_369-Green" value="#0F0" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-Green">Green</option><option id="captions-window-color-video_component_369-Blue" value="#00F" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-Blue">Blue</option><option id="captions-window-color-video_component_369-Yellow" value="#FF0" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-Yellow">Yellow</option><option id="captions-window-color-video_component_369-Magenta" value="#F0F" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-Magenta">Magenta</option><option id="captions-window-color-video_component_369-Cyan" value="#0FF" aria-labelledby="captions-window-video_component_369 captions-window-color-video_component_369 captions-window-color-video_component_369-Cyan">Cyan</option></select><span class="vjs-window-opacity vjs-opacity"><label id="captions-window-opacity-video_component_369" class="vjs-label">Transparency</label><select aria-labelledby="captions-window-video_component_369 captions-window-opacity-video_component_369"><option id="captions-window-opacity-video_component_369-Transparent" value="0" aria-labelledby="captions-window-video_component_369 captions-window-opacity-video_component_369 captions-window-opacity-video_component_369-Transparent">Transparent</option><option id="captions-window-opacity-video_component_369-SemiTransparent" value="0.5" aria-labelledby="captions-window-video_component_369 captions-window-opacity-video_component_369 captions-window-opacity-video_component_369-SemiTransparent">Semi-Transparent</option><option id="captions-window-opacity-video_component_369-Opaque" value="1" aria-labelledby="captions-window-video_component_369 captions-window-opacity-video_component_369 captions-window-opacity-video_component_369-Opaque">Opaque</option></select></span></fieldset></div><div class="vjs-track-settings-font"><fieldset class="vjs-font-percent vjs-track-setting"><legend id="captions-font-size-video_component_369" class="">Font Size</legend><select aria-labelledby="captions-font-size-video_component_369"><option id="captions-font-size-video_component_369-50" value="0.50" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-50">50%</option><option id="captions-font-size-video_component_369-75" value="0.75" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-75">75%</option><option id="captions-font-size-video_component_369-100" value="1.00" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-100">100%</option><option id="captions-font-size-video_component_369-125" value="1.25" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-125">125%</option><option id="captions-font-size-video_component_369-150" value="1.50" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-150">150%</option><option id="captions-font-size-video_component_369-175" value="1.75" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-175">175%</option><option id="captions-font-size-video_component_369-200" value="2.00" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-200">200%</option><option id="captions-font-size-video_component_369-300" value="3.00" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-300">300%</option><option id="captions-font-size-video_component_369-400" value="4.00" aria-labelledby="captions-font-size-video_component_369 captions-font-size-video_component_369-400">400%</option></select></fieldset><fieldset class="vjs-edge-style vjs-track-setting"><legend id="video_component_369" class="">Text Edge Style</legend><select aria-labelledby="video_component_369"><option id="video_component_369-None" value="none" aria-labelledby="video_component_369 video_component_369-None">None</option><option id="video_component_369-Raised" value="raised" aria-labelledby="video_component_369 video_component_369-Raised">Raised</option><option id="video_component_369-Depressed" value="depressed" aria-labelledby="video_component_369 video_component_369-Depressed">Depressed</option><option id="video_component_369-Uniform" value="uniform" aria-labelledby="video_component_369 video_component_369-Uniform">Uniform</option><option id="video_component_369-Dropshadow" value="dropshadow" aria-labelledby="video_component_369 video_component_369-Dropshadow">Dropshadow</option></select></fieldset><fieldset class="vjs-font-family vjs-track-setting"><legend id="captions-font-family-video_component_369" class="">Font Family</legend><select aria-labelledby="captions-font-family-video_component_369"><option id="captions-font-family-video_component_369-ProportionalSansSerif" value="proportionalSansSerif" aria-labelledby="captions-font-family-video_component_369 captions-font-family-video_component_369-ProportionalSansSerif">Proportional Sans-Serif</option><option id="captions-font-family-video_component_369-MonospaceSansSerif" value="monospaceSansSerif" aria-labelledby="captions-font-family-video_component_369 captions-font-family-video_component_369-MonospaceSansSerif">Monospace Sans-Serif</option><option id="captions-font-family-video_component_369-ProportionalSerif" value="proportionalSerif" aria-labelledby="captions-font-family-video_component_369 captions-font-family-video_component_369-ProportionalSerif">Proportional Serif</option><option id="captions-font-family-video_component_369-MonospaceSerif" value="monospaceSerif" aria-labelledby="captions-font-family-video_component_369 captions-font-family-video_component_369-MonospaceSerif">Monospace Serif</option><option id="captions-font-family-video_component_369-Casual" value="casual" aria-labelledby="captions-font-family-video_component_369 captions-font-family-video_component_369-Casual">Casual</option><option id="captions-font-family-video_component_369-Script" value="script" aria-labelledby="captions-font-family-video_component_369 captions-font-family-video_component_369-Script">Script</option><option id="captions-font-family-video_component_369-SmallCaps" value="small-caps" aria-labelledby="captions-font-family-video_component_369 captions-font-family-video_component_369-SmallCaps">Small Caps</option></select></fieldset></div><div class="vjs-track-settings-controls"><button type="button" class="vjs-default-button" title="restore all settings to the default values">Reset<span class="vjs-control-text"> restore all settings to the default values</span></button><button type="button" class="vjs-done-button">Done</button></div></div><button class="vjs-close-button vjs-control vjs-button" type="button" aria-disabled="false" title="Close Modal Dialog"><span aria-hidden="true" class="vjs-icon-placeholder"></span><span class="vjs-control-text" aria-live="polite">Close Modal Dialog</span></button><p class="vjs-control-text">End of dialog window.</p></div></div>					</div>
+				</div>
+				<div class="col-sm-5 col-md-4 bspace-30">
+					<div class="email form-container text-center">
+						<h3 class="thin" data-i18n="">Let Me Show You How to Make</h3>
+						<h1 class="form_header nomargin bold boldify orange spaced-05" data-i18n="">
+							Cash LIVE 
+							<br>
+							Right Now
+						</h1>
+	<form class="form-wrapper" id="input-form">
+
+    <div class="alert alert-danger hidden" role="alert" data-general-error=""></div>
+
+    <div class="form-group input-wrapper relative-input-wrapper">
+        <input name="first_name" placeholder="Enter your First Name" class="form-control" required="" minlength="2">
+        <div data-error-status="inactive" data-for-error="first_name">Your first name is too short (at least 2 characters)</div>
+        <span data-check-icon="inactive" data-check-icon-for="first_name"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <div class="form-group input-wrapper relative-input-wrapper">
+        <input name="last_name" placeholder="Enter your Last Name" class="form-control" required="" minlength="2">
+        <div data-error-status="inactive" data-for-error="last_name">Your last name is too short (at least 2 characters)</div>
+        <span data-check-icon="inactive" data-check-icon-for="last_name"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <div class="form-group input-wrapper relative-input-wrapper">
+        <input name="email" placeholder="Enter Email Address" class="form-control" type="email" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiYmZkZTQxOS00ZGRkLWU5NDYtOWQ2MC05OGExNGJiMTA3N2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDAyNDkwMkRDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDAyNDkwMkNDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTU2NTE1NDItMmIzOC1kZjRkLTk0N2UtN2NjOTlmMjQ5ZGFjIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmJiZmRlNDE5LTRkZGQtZTk0Ni05ZDYwLTk4YTE0YmIxMDc3ZiIv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&quot;) !important; background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;" data-temp-mail-org="0">
+        <div data-error-status="inactive" data-for-error="email">Please enter your real email address (<a href="https://en.bitcoin-code.network/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="fa9f829b978a969fba9f979b9396d4999597">[email&nbsp;protected]</a>)</div>
+        <span data-check-icon="inactive" data-check-icon-for="email"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <input type="hidden" name="clickId" id="clickId" value="">
+    
+    <div class="form-group input-wrapper relative-input-wrapper d-flex">
+     <div class="cc-picker cc-picker-code-select-enabled"><div class="cc-picker-flag ua"></div><span class="cc-picker-code">380</span> </div><input type="text" placeholder="Phone" id="phoneField1" class="form-control phone" name="phone" style="width:73%" required=""><input type="hidden" id="phoneField1_phoneCode" name="phone_phoneCode" value="380">
+
+       <!--  <input class="area_code" name="area_code" type="hidden">
+        <input class="phone form-control" name="phone" type="text"> -->
+        <div data-error-status="inactive" data-for-error="phone">Please enter your real phone number</div>
+        <span data-check-icon="inactive" data-check-icon-for="phone"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <div class="form-group input-wrapper">
+        <button type="submit" class="register-btn">REGISTER NOW</button>
+    </div>
+
+    <!-- Validation messages -->
+    <div data-validation-msgs-wrapper="">
+        <span data-for-rule="required">funnel::required-rule</span>
+        <span data-for-rule="minLength">funnel::minLength-rule</span>
+        <span data-for-rule="maxLength">funnel::maxLength-rule</span>
+        <span data-for-rule="already-registered">funnel::home.already-registered</span>
+
+        <!-- Default error messages -->
+        <span data-default-error-for="first_name">Your first name is too short (at least 2 characters)</span>
+        <span data-default-error-for="last_name">Your last name is too short (at least 2 characters)</span>
+        <span data-default-error-for="email">Please enter your real email address (<a href="https://en.bitcoin-code.network/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="abced3cac6dbc7ceebcec6cac2c785c8c4c6">[email&nbsp;protected]</a>)</span>
+        <span data-default-error-for="password">Only alphanumeric characters are allowed. The password must be 6-9 characters long and contain at least 1 letter and 1 number</span>
+        <span data-default-error-for="phone">Please enter a valid phone number</span>
+        <span data-default-error-for="already-registered">You are already registered in our system.</span>
+    </div>
+    <!-- Validation messages -->
+    </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container tspace-30 bspace-30 join-container">
+		<h1 class="nomargin bspace-30"><span data-i18n="">Join</span> <span class="italic boldify spaced-05" data-i18n="">The Bitcoin Code</span></h1>
+		<p class="large bspace-15"><span class="italic bold boldify spaced-05" data-i18n="">The Bitcoin Code</span> <span data-i18n="">is a group reserved exclusively to people who jumped on the insane returns that Bitcoin offers and have quietly amassed a fortune in doing so.</span></p>
+		<p class="large"><span class="italic boldify spaced-05" data-i18n="">Bitcoin Code Members</span> <span data-i18n="">enjoy retreats around the world every month while they make money on their laptop with just a few minutes of “work” every day.</span></p>
+	</div>
+	<div class="vacations-section d-none d-md-block">
+		<h1 class="caption nomargin tspace-15 bspace-15 white text-center" data-i18n="">Here are some of our past vacations</h1>
+	</div>
+	<div class="container tspace-30 bspace-30 testimonials-container">
+		<h1 class="bold bspace-30 text-center" data-i18n="">Hear From Our Members Who Rely On Our Software To Fund Their Luxury Lifestyles</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-1.jpg">
+					<h4 data-i18n="">Laura Abenstein</h4>
+					<p><span data-i18n="">I’ve been a member of the Bitcoin Code for only 47 days. But my life has already changed! Not only have I made my first</span> <span data-init="visitor-currency-symbol">$</span>100K, <span data-i18n="">but I’ve also met some of the most incredible people in the process. Thanks, Steve!</span></p>
+				</div>
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-2.jpg">
+					<h4 data-i18n="">Joey Feldman</h4>
+					<p><span data-i18n="">When I joined The Bitcoin Code 2 months ago, never could have I ever imagined the series of events that would unfold just days after locking in my free software. I was able to clear my</span> <span data-init="visitor-currency-symbol">$</span>131,382 <span data-i18n="">debt. There is no greater feeling than to be debt-free. Now, I’m in the process of buying my dream home. I still can’t believe this is all really happening…I’m forever grateful to Steve.</span></p>
+				</div>
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-3.jpg">
+					<h4 data-i18n="">Michael Zusman</h4>
+					<p><span data-i18n="">The results of the software speaks for itself...just as promised, I made over</span> <span data-init="visitor-currency-symbol">$</span>13,000 <span data-i18n="">every single day. Do I really need to say more?</span></p>
+				</div>
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-4.jpg">
+					<h4 data-i18n="">Paulo Fonzi</h4>
+					<p data-i18n="">Yesterday, I QUIT my job...and today, I’m at a pool party in Vegas! Life is CRAZYYYY. And it’s all thanks to the Bitcoin Code. THANK YOU STEVE!</p>
+				</div>
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-5.jpg">
+					<h4 data-i18n="">Lewis H.</h4>
+					<p><span data-i18n="">Is this for real? I just joined 2 days ago, and my account balance has already ballooned to a staggering</span> <span data-init="visitor-currency-symbol">$</span>27,484.98!!!</p>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-6.jpg">
+					<h4 data-i18n="">Chris Hadid</h4>
+					<p data-i18n="">I ask my wife to pinch me every morning when I wake up and check my bank balance. I have never seen a number that big before in MY bank account. And it just continues to grow and grow some more...this is what I’ve been waiting for my entire life. Now that I have a taste of what it really feels like to be my own boss and make tens of thousands of dollars every week, I won’t ever look back!</p>
+				</div>
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-7.jpg">
+					<h4 data-i18n="">Daniel Pelts</h4>
+					<p><span data-i18n="">Surprisingly, I used to be an investor on Wall Street. And I’ve never seen anything like this in my 10 year tenure at the company. My colleagues all thought I was crazy when I quit the firm to invest with the Bitcoin Code software full-time.</span> <span data-init="visitor-currency-symbol">$</span>384,594 <span data-i18n="">in profits later, all of my colleagues are now BEGGING me to let them in.</span></p>
+				</div>
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-8.jpg">
+					<h4 data-i18n="">Magda Boltyanski</h4>
+					<p data-i18n="">I finally know what it’s like to live the dream. I no longer feel like I’m on the outside looking in while everyone else has all the fun. The Bitcoin Code has allowed me to retire early and live the 1% lifestyle.</p>
+				</div>
+				<div class="testimonial">
+					<img src="BitcoinCode_files/testimonial-9.jpg">
+					<h4 data-i18n="">Carl Edwards</h4>
+					<p><span data-i18n="">Two weeks ago, I got laid off. With no options left, I thought my life was over. Now I’m making over</span> <span data-init="visitor-currency-symbol">$</span>13,261.42 <span data-i18n="">each and every day. And for the first time in 2 months, my account isn’t overdrawn. Thank you, STEVE!</span></p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="man-section white">
+		<div class="container">
+			<div class="row dark-bck">
+				<div class="col-md-5 col-sm-6 lspace-0 rspace-0">
+					<img src="BitcoinCode_files/man.jpg">
+				</div>
+				<div class="col-md-7 col-sm-6 lspace-0 rspace-0">
+					<div class="lspace-15 rspace-15">
+						<h1 class="bold" data-i18n="">Meet Steve McKay</h1>
+						<p class="italic" data-i18n="">The Genius Behind The Bitcoin Code</p>
+						<p data-i18n="">Hi - I’m an ex-software developer for a large firm whose name I prefer not to disclose.</p>
+						<p><span data-i18n="">I created a Bitcoin Trading Software that has earned over</span> <span data-init="visitor-currency-symbol">$</span>18,484,931.77 <span data-i18n="">in profits within the past 6 months alone.</span></p>
+						<p data-i18n="">This software is making millionaires faster than early investors of Uber, Facebook or Airbnb.</p>
+						<p data-i18n="">If you want to make a million with Bitcoin, watch the video above to learn how.</p>
+
+
+						<p class="rspace-15"><img id="sign" class="float-right signature" src="BitcoinCode_files/sign.png"><span data-i18n="">Your Friend</span>,<br>
+						<span data-i18n="">Steve McKay</span></p>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+		</div>
+	</div>
+	<div class="container tspace-15 bspace-15 text-center">
+		<div class="form-container email bordered">
+			<form class="form-wrapper" data-form="single" id="input-form2">
+
+    <div class="alert alert-danger hidden" role="alert" data-general-error=""></div>
+
+    <div class="form-group input-wrapper relative-input-wrapper">
+        <input name="first_name" placeholder="Enter your First Name" class="form-control" required="" minlength="2">
+        <div data-error-status="inactive" data-for-error="first_name">Your first name is too short (at least 2 characters)</div>
+        <span data-check-icon="inactive" data-check-icon-for="first_name"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <div class="form-group input-wrapper relative-input-wrapper">
+        <input name="last_name" placeholder="Enter your Last Name" class="form-control" required="" minlength="2">
+        <div data-error-status="inactive" data-for-error="last_name">Your last name is too short (at least 2 characters)</div>
+        <span data-check-icon="inactive" data-check-icon-for="last_name"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <div class="form-group input-wrapper relative-input-wrapper">
+        <input name="email" placeholder="Enter Email Address" class="form-control" required="" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpiYmZkZTQxOS00ZGRkLWU5NDYtOWQ2MC05OGExNGJiMTA3N2YiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6RDAyNDkwMkRDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6RDAyNDkwMkNDOTIyMTFFNkI0MzFGRTk2RjM1OTdENTciIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTUgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6OTU2NTE1NDItMmIzOC1kZjRkLTk0N2UtN2NjOTlmMjQ5ZGFjIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOmJiZmRlNDE5LTRkZGQtZTk0Ni05ZDYwLTk4YTE0YmIxMDc3ZiIv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&quot;) !important; background-repeat: no-repeat; background-size: 20px; background-position: 97% center; cursor: auto;" data-temp-mail-org="1">
+        <div data-error-status="inactive" data-for-error="email">Please enter your real email address (<a href="https://en.bitcoin-code.network/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="315449505c415d5471545c50585d1f525e5c">[email&nbsp;protected]</a>)</div>
+        <span data-check-icon="inactive" data-check-icon-for="email"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <input type="hidden" name="clickId" id="clickId">
+    
+    <div class="form-group input-wrapper relative-input-wrapper d-flex">
+        <div class="cc-picker cc-picker-code-select-enabled"><div class="cc-picker-flag ua"></div><span class="cc-picker-code">380</span> </div><input type="text" placeholder="Phone" id="phoneField2" class="form-control phone" name="phone" required=""><input type="hidden" id="phoneField2_phoneCode" name="phone_phoneCode" value="380">
+<!--         <input class="area_code" name="area_code" type="hidden">
+        <input class="phone form-control" name="phone" type="text"> -->
+        <div data-error-status="inactive" data-for-error="phone">Please enter your real phone number</div>
+        <span data-check-icon="inactive" data-check-icon-for="phone"><img src="BitcoinCode_files/check-icon.png" alt="✔"></span>
+    </div>
+
+    <div class="form-group input-wrapper">
+        <button type="submit" class="register-btn">REGISTER NOW</button>
+    </div>
+
+    <!-- Validation messages -->
+    <div data-validation-msgs-wrapper="">
+        <span data-for-rule="required">funnel::required-rule</span>
+        <span data-for-rule="minLength">funnel::minLength-rule</span>
+        <span data-for-rule="maxLength">funnel::maxLength-rule</span>
+        <span data-for-rule="already-registered">funnel::home.already-registered</span>
+
+        <!-- Default error messages -->
+        <span data-default-error-for="first_name">Your first name is too short (at least 2 characters)</span>
+        <span data-default-error-for="last_name">Your last name is too short (at least 2 characters)</span>
+        <span data-default-error-for="email">Please enter your real email address (<a href="https://en.bitcoin-code.network/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="47223f262a372b2207222a262e2b6924282a">[email&nbsp;protected]</a>)</span>
+        <span data-default-error-for="password">Only alphanumeric characters are allowed. The password must be 6-9 characters long and contain at least 1 letter and 1 number</span>
+        <span data-default-error-for="phone">Please enter a valid phone number</span>
+        <span data-default-error-for="already-registered">You are already registered in our system.</span>
+    </div>
+    <!-- Validation messages -->
+    </form>
+		</div>
+		<ul class="footer-ul text-center" style="list-style: none">
+			<style>.footer-ul li{display: inline-block; margin: 0 2px}</style>
+			<li><a target="_blank" href="https://opporpage.com/bitcoin-code-1-step//?oid=59&amp;gid=59&amp;qze=2148&amp;hitid=10214726e9e24becb4c5be5fb13b1c" data-i18n="">Home</a></li>
+			<li><a target="_blank" id="privacy-policy" href="https://opporpage.com/bitcoin-code-1-step/privacy-policy?oid=59&amp;gid=59&amp;qze=2148&amp;hitid=10214726e9e24becb4c5be5fb13b1c" data-i18n="">Privacy Policy</a></li>
+			<li><a target="_blank" id="terms" href="https://opporpage.com/bitcoin-code-1-step/terms?oid=59&amp;gid=59&amp;qze=2148&amp;hitid=10214726e9e24becb4c5be5fb13b1c" data-i18n="">Terms</a></li>
+			<li><a target="_blank" id="earnings-disclaimer" href="https://opporpage.com/bitcoin-code-1-step/earnings-disclaimer?oid=59&amp;gid=59&amp;qze=2148&amp;hitid=10214726e9e24becb4c5be5fb13b1c" data-i18n="">Earnings Disclaimer</a></li>
+			<li><a target="_blank" id="spam-policy" href="https://opporpage.com/bitcoin-code-1-step/spam-policy?oid=59&amp;gid=59&amp;qze=2148&amp;hitid=10214726e9e24becb4c5be5fb13b1c" data-i18n="">Spam Policy</a></li>								
+			<li><a target="_blank" id="contact" href="https://opporpage.com/bitcoin-code-1-step/contact?oid=59&amp;gid=59&amp;qze=2148&amp;hitid=10214726e9e24becb4c5be5fb13b1c" data-i18n="">Contact Us</a></li>								
+		</ul>
+		<p class="tspace-15 small" data-i18n="">Important Risk Note: Trading binary options can generate significant benefits but also involves a risk of partial or full funds loss and should be considered by initial investors. we strongly advise that you read our terms &amp; conditions and disclaimer page before making any investment. customers must be aware of their individual capital gain tax liability in their country of residence. It is against the law to solicit U.S. persons to buy and sell commodity options, even if they are called 'prediction' contracts, unless they are listed for trading and traded on a CFTC-registered exchange or unless legally exempt.</p>
+	</div>
+
+	<div class="loading-wrapper">
+		<img src="BitcoinCode_files/806.gif" alt="Loading Gif">
+	</div>
+
+<!-- JS Core -->
+<!-- <script src="js/footer-links.js"></script> -->
+<!-- #JS Core -->
+    <div data-flow="quick-thanks" data-flow-status="inactive">
+    <!-- TOP SECTION START -->
+    <section class="top_section">
+        <div class="container">
+            <img src="BitcoinCode_files/logo.png" alt="Logo">
+        </div>
+    </section>
+    <!-- TOP SECTION END -->
+
+    <!-- DIAMONDS SECTION START -->
+    <section class="diamonds_section"></section>
+    <!-- DIAMONDS SECTION END -->
+
+    <!-- MAIN SECTION START -->
+    <section class="main_section">
+        <div class="container">
+            <div class="main_section_wrapper">
+                <h1 class="main_section_wrapper_header">Welcome to Bitcoin Code</h1>
+                <p class="margin_bottom">You are only a few short steps away from setting up your Account, so pay very close attention here as you need to make sure your system is setup correctly.</p>
+                <h2 class="main_section_wrapper_subheader">Phone Call Verification &amp; Setup</h2>
+                <p class="margin_bottom">In this program (as you have seen) we take security very seriously and in-order to verify you are a real person and to validate your account, one of our start up specialists will be calling you within the next 30mins. (Mon-Fri)                <br>
+                If you aren’t available, please answer the call and schedule an appointment for a more convenient time.</p>
+                <h2 class="main_section_wrapper_subheader">Self Activation &amp; How it Works</h2>
+                <p>We all know the saying “money makes money” - and the reality is, this phrase is unfortunately very true! What people don’t tell you is that, if you are able to multiply your profits over a short period of time, a little bit of money can turn into a lot of money very quickly!</p>
+                <p>On the next page you will be sent to our carefully selected partner in-order to Activate your account by depositing your small start-up capital.</p>
+                <p>The money you deposit is your money and you don’t have to use it all at once, you can start with small amounts to see how the system works and remember, you can withdraw your capital at any time.</p>
+                <p>If you are not sure how to Self-Activate your account, go to your account below and then wait for one of our start up specialists to call you within the next 30mins.                <br>
+                (Mon-Fri)                </p>
+                <button data-redirect-status="loading" data-flow="redirect-btn">Go to Account <img src="BitcoinCode_files/loading.gif" alt="Loading"></button>
+            </div>
+        </div>
+    </section>
+    <!-- MAIN SECTION END -->
+</div>    <div data-flow="registration-error-modal" data-flow-status="inactive">
+    <div>
+        <img src="BitcoinCode_files/sad-face.svg" alt="Sad Face">
+        <p>It seems that an error occurred during your registration. Click <a href="https://en.bitcoin-code.network/#">here</a> to go back to the page.</p>
+    </div>
+</div>
+    <script data-cfasync="false" src="BitcoinCode_files/email-decode.min.js"></script><script src="BitcoinCode_files/l.js"></script>
+    	<script src="BitcoinCode_files/funnel.js"></script>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"48dc7ee8c8","applicationID":"594001916","transactionName":"MVxSYBcAWUQCBRdQCwgWcVcRCFhZTCcTSTguTUREOSJYWRcUDFUIA0tDaCkAWVMKCARpBQFcc1sLFUVYDwoGSyQVXEJCAA==","queueTime":0,"applicationTime":443,"atts":"HRtRFl8aSko=","errorBeacon":"bam.nr-data.net","agent":""}</script>
+
+<link href="BitcoinCode_files/jquerysctipttop.css" rel="stylesheet" type="text/css">
+<script src="BitcoinCode_files/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+<script src="BitcoinCode_files/jquery.ccpicker.js" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="BitcoinCode_files/jquery.ccpicker.css">
+
+<script type="text/javascript">
+$(document).ready(function () {
+
+  $("#phoneField1").CcPicker();
+  $("#phoneField2").CcPicker();
+
+  $.get("https://ipinfo.io", function(response) {
+    $("#phoneField1").CcPicker("setCountryByCode",response.country);
+    $("#phoneField2").CcPicker("setCountryByCode",response.country);
+  }, "jsonp");
+  
+
+  const queryString = window.location.search.substring(1).split('s2=');
+  const clickId = queryString[1] ? queryString[1] : '';
+  $('#clickId').val(clickId);
+
+
+  $('#input-form').submit( function(e) {
+    e.preventDefault();
+    let data = $('#input-form').serialize();
+    $('#loader').removeClass('hidden');
+    sendData(data);
+  });
+
+  $('#input-form2').submit( function(e) {
+    e.preventDefault();
+    let data = $('#input-form2').serialize();
+    $('#loader').removeClass('hidden');
+    sendData(data);
+  });
+
+  var sendData = function(data){
+    $.ajax({
+        url: '/sheet_api.php',
+        type: 'post',
+        dataType: 'json',
+        data: data,
+        success: function(data) {
+          $('#loader').addClass('hidden');
+          if(data.status == 'success'){
+            window.location.href = '/thank_you.php?r='+data.data;
+          } else {
+            alert(data.data);
+          }
+        },
+        error : function(error) {
+          console.log(error);
+          $('#loader').addClass('hidden');
+        }
+    });
+  }
+});
+</script>
+
+<style type="text/css">
+    body {
+        background: #ececec;
+    }
+    /*Hidden class for adding and removing*/
+    .lds-dual-ring.hidden {
+        display: none;
+    }
+
+    /*Add an overlay to the entire page blocking any further presses to buttons or other elements.*/
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background: rgba(0,0,0,.8);
+        z-index: 999;
+        opacity: 1;
+        transition: all 0.5s;
+    }
+
+    /*Spinner Styles*/
+    .lds-dual-ring {
+        display: inline-block;
+    }
+    .lds-dual-ring:after {
+        content: " ";
+        display: block;
+        width: 64px;
+        height: 64px;
+        margin: 5% auto;
+        border-radius: 50%;
+        border: 6px solid #fff;
+        border-color: #fff transparent #fff transparent;
+        animation: lds-dual-ring 1.2s linear infinite;
+    }
+    @keyframes lds-dual-ring {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+
+    .phone {
+        display: inline-block !important;
+    }
+    .cc-picker-code {
+        display: inline-block;
+        width: 27px;
+        font-size: 15px;
+    }
+
+    .cc-picker-flag {
+        margin-right: 10px;
+        transform: scale(1.8);
+    }
+    .d-flex {
+        display: flex;
+        align-items: center;
+    }
+    .cc-picker-code-select-enabled {
+        flex: none;
+    }
+</style>
+<div class="memorize_new_word_loading" style="display: none;"></div><div class="bv-shadow-dom bv-shadow-dom-fade_out"><div class="bv-shadow-dom-container"></div></div></body></html>

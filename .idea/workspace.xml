@@ -2,10 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="739affe8-b030-45b5-b455-17c778bf2297" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/routes/AccountApi.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/48dc7ee8c8" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/806.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/check-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/flow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/forms.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/funnel.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/funnel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/jquery-1.12.4.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/jquery.ccpicker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/jquery.ccpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/jquerysctipttop.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/l.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/man.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/nr-1184.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/sad-face.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/sign.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-5.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-6.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-7.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-8.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/testimonial-9.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/BitcoinCode_files/uwt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/sendData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/SheetsUtil.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utils/credentials.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/AccountApi.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/AccountApi.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,8 +75,14 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/utils" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/utils" />
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -57,7 +96,8 @@
       <updated>1610531987443</updated>
       <workItem from="1610531989627" duration="1980000" />
       <workItem from="1610534024908" duration="2289000" />
-      <workItem from="1610724073351" duration="3694000" />
+      <workItem from="1610724073351" duration="4783000" />
+      <workItem from="1610994743948" duration="7072000" />
     </task>
     <servers />
   </component>
@@ -102,5 +142,9 @@
       <screen x="0" y="27" width="1366" height="741" />
     </state>
     <state width="1320" height="175" key="GridCell.Tab.0.right/0.27.1366.741@0.27.1366.741" timestamp="1610534005463" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1610995601714">
+      <screen x="0" y="27" width="1366" height="741" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.27.1366.741@0.27.1366.741" timestamp="1610995601714" />
   </component>
 </project>

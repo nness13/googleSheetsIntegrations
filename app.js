@@ -19,8 +19,13 @@ app.use( bodyParser.json() );
 // Allow requests from any origin
 app.use(cors({ origin: '*' }));
 
+console.log(__dirname)
+app.use(express.static(__dirname + '/public'));
+
+
 // Allow routes
 app.use(accountRoutes)
+
 
 
 const server = app.listen(serverPort, function() {
